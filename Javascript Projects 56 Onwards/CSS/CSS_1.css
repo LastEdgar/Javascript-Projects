@@ -1,0 +1,24 @@
+h2 {
+    text-align: center;
+    margin: auto;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2rem;
+}
+
+input[type=text] {
+    width: 60%;
+    display: block;
+    margin: auto;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+
+}
+
+input[type=submit] {
+    display: block;
+    margin: auto;
+    width: 10%;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
