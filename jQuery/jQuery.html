@@ -3,17 +3,17 @@
 
 <head>
     <meta charset="utf-8">
+    <title>jQuery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--Also tried jquery.js as a local file and a few variants here-->
-    <title>jQuery</title>
+    
 </head>
 
 
-
 <script>
-$(function(){  //$ = jQuery. formerly $(document).ready(function()){} since deprecated
+$(document).ready(function(){  //$ = jQuery. working now with old function
     $("html").append( // \ means make new line, single '' are for selectors without interfering with outer ""
-        "<body>\ 
+        "<body>\
             <div id='container'>\
                 <div id='inner'>\
                     <h1>Basic jQuery</h1>\
@@ -27,11 +27,16 @@ $(function(){  //$ = jQuery. formerly $(document).ready(function()){} since depr
     );
     $("#2").css({"color":"red"});
     $("#3").click(function() {
-        $('h1').hide();
+        $('h1').hide("slow");
+    });
+    $("p").click(function () { //Challenges
+        console.log("You clicked it didnt you");
     });
 
 });
+    
 
 </script>
+
 
 </html>
