@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JSON Challenge 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <p id="myDog"></p>
+
+    <script>
+        var dog = '{ "name": "Howie", "breed": "street mix", "color": "brown", "age": "4", "origin": "Mexico" }';
+        var JSONstring = JSON.parse(dog);
+        document.getElementById("myDog").innerHTML = "My dog is "+JSONstring.name+ ", a "+JSONstring.age+" year old "+JSONstring.color+" "+JSONstring.breed+" from "+JSONstring.origin+".";
+    </script>
+
+
+</body>
+
+</html>
