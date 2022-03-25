@@ -1,0 +1,68 @@
+*{box-sizing: border-box;}
+
+.open-button {
+    background-color: rgb(46, 42, 42);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    animation: mover 3s infinite;
+}
+
+.popup-form {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 10;
+    border: 3px solid black;
+    z-index: 10;
+}
+
+.form-container {
+    max-width: 250px;
+    padding: 15px;
+    background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+} 
+
+.form-container btn {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 12px;
+    opacity: 0.7;
+}
+
+.form-container .cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+@keyframes mover {
+    0% {top: 0px;left: 0px;}
+    50% {top: 0;left: 200px;}
+    100% {top: 0px;left: 0px;}
+}

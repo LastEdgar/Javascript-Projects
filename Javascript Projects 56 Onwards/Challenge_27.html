@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            var Song = "<song>" + "<name>Something Comforting</name>" + "<artist>Porter Robinson</artist>"+"<year>2021</year>"+"</song>"; //new text string
+
+            XML_Parser = new DOMParser(); //New dom parser
+            XML_Document = XML_Parser.parseFromString(Song,"text/xml"); //new XML Dom object from text string
+
+            document.getElementById("XML_Example").innerHTML = 
+            XML_Document.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+
+
+
+        </script>
+    </body>
+</html>

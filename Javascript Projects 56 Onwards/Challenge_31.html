@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Challenge 31</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type="text/css" href="./CSS/popUpForm.css">
+    <script src="./Javascript/popUpForm.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <button class="open-button" onclick="openForm()">Open Form</button>
+    <div class="popup-form" id = "theForm">
+        <form action="" class="form-container">
+            <h2>Login</h2>
+
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="username" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" name="pass" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+        </form>
+    </div>
+    
+
+</body>
+
+</html>
